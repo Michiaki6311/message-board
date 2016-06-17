@@ -1,6 +1,6 @@
 class CreateMassages < ActiveRecord::Migration
   def change
-    create_table :massages do |t|
+    create_table :messages do |t|
       t.string :name
       t.string :body
 
