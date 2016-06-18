@@ -6,12 +6,13 @@
   <div class="panel-body">
     <table class="table table-hover">
       <thead>
-        <tr><th>名前</th><th>メッセージ</th><th>編集</th><th>削除</th></tr>
+        <tr><th>名前</th><th>メッセージ</th><th>年齢</th><th>編集</th><th>削除</th></tr>
       </thead>
       <tbody>
     <% @messages.each do |message| %>
         <tr><td><span class="glyphicon glyphicon-user label label-info"><%= message.name %></span></td>
         <td><%= message.body %></td>
+        <td><%= message.age %></td>
         <td>
     <%= link_to "edit", edit_message_path(message) %>
         </td>
